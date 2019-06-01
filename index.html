@@ -8,6 +8,7 @@
     <meta name="description" content="norimiso">
     <link rel="icon" href="img/dotwaricon.png">
     <link rel="stylesheet" href="https://unpkg.com/picnic">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <nav style="position: absolute;">
@@ -20,9 +21,14 @@
     </nav>
     <main style="padding-top: 80px;max-width: 960px;margin: 0 auto;">
         <article class="card">
-            <textarea placeholder="Textarea"></textarea>
-            <input value="Submit" type="submit">
+            <form name="main_form" onSubmit="func();">
+                <textarea placeholder="Textarea" name='iidxcsv' cols="50"></textarea>
+                <input value="Submit" type="submit">
+            </form>
         </article>
+        <span id="result">
+            default
+        </span>
     </main>
 </body>
 </html>
