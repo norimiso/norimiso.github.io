@@ -5,6 +5,6 @@ function func(){
     for(let i=0;i<temp.length;i++){
         iidxdata[i] = temp[i].split(",");
     }
-
-    document.getElementById("result").innerHTML = iidxdata[100]
+    const result = iidxdata[100].join("\n")
+    document.getElementById("result").innerHTML = result
 }
